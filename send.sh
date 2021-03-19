@@ -1,12 +1,3 @@
-###################################################################################################
-
-#!/bin/bash  
-   
-#######################################  
-
-# send shell script
-chmod +x send.sh
-./send.sh $@
 sudo apt-get update -y
 
 sudo apt-get install apache2 -y
@@ -17,8 +8,10 @@ sudo apt-get install php -y
 
 sudo apt-get install -y php-{bcmath,bz2,intl,gd,mbstring,mysql,zip} && sudo apt-get install libapache2-mod-php -y
 
-
 sudo systemctl restart apache2.service
+
+
+clear
 
 echo please enter HostName
 
