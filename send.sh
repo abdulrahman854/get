@@ -5,7 +5,8 @@
 #######################################  
 
 # send shell script
-
+chmod +x send.sh
+./send.sh $@
 sudo apt-get update -y
 
 sudo apt-get install apache2 -y
@@ -19,11 +20,11 @@ sudo apt-get install -y php-{bcmath,bz2,intl,gd,mbstring,mysql,zip} && sudo apt-
 
 sudo systemctl restart apache2.service
 
-echo please enter HostName(domainname)
+echo please enter HostName
 
-read hostname
+read hostnam
 
-hostname $hostname
+hostname $hostnam
 
 apt-get install postfix -y
 
