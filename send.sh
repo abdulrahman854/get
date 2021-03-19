@@ -19,8 +19,6 @@ sudo apt-get install -y php-{bcmath,bz2,intl,gd,mbstring,mysql,zip} && sudo apt-
 
 sudo systemctl restart apache2.service
 
-clear
-
 echo please enter HostName(domainname)
 
 read hostname
